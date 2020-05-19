@@ -12,6 +12,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         demo.setOnClickListener {
+            val i = Intent(this@MainActivity, FirstClass::class.java)
+            startActivity(i)
+
+        }
+        sample_tv.setOnClickListener {
+
             val i= Intent(this@MainActivity,FirstClass::class.java)
             startActivity(i)
 
